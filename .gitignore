@@ -1,0 +1,73 @@
+!.gitignore
+
+#######################
+# AR style
+#######################
+data/*
+misc/*
+logs/*
+*/logs/*
+tmp/*
+
+*.swp
+.*.swp
+*.codekit
+
+#######################
+# OSX
+#######################
+.DS_Store
+
+#######################
+# React Native below
+#######################
+
+#######################
+# Xcode
+#######################
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+#######################
+# Android/IJ
+#######################
+*.iml
+.idea
+.gradle
+local.properties
+
+#######################
+# node.js
+#######################
+node_modules/
+npm-debug.log
+
+#######################
+# BUCK
+#######################
+buck-out/
+\.buckd/
+android/app/libs
+android/keystores/debug.keystore
+
+#######################
+# android apk related
+#######################
+android/app/build.gradle
+android/gradle.properties
+android/app/my-release-key.keystore
