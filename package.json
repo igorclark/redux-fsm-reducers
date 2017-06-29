@@ -6,6 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+  	"arrify": "^1.0.1",
+    "javascript-state-machine": "2.4.0",
+	"lodash": "^4.17.4",
+    "redux-saga": "^0.15.4"
+  },
   "repository": {
     "type": "git",
     "url": "git@codebasehq.com:artrabbit/libraries/redux-fsm-reducers.git"
