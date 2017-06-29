@@ -1,0 +1,19 @@
+{
+  "name": "redux-fsm-reducers",
+  "version": "0.1.0",
+  "description": "builder functions to create FSMs as Redux reducers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@codebasehq.com:artrabbit/libraries/redux-fsm-reducers.git"
+  },
+  "keywords": [
+    "redux",
+    "fsm"
+  ],
+  "author": "Igor Clark <igor@artrabbit.com>",
+  "license": "MIT"
+}
