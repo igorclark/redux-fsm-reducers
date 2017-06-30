@@ -2,7 +2,23 @@ import { select }   from 'redux-saga/effects';
 
 import arrify       from 'arrify';
 
-const fsmIsCurrentlyInState = function* ( reducerName, itemName, desiredState ) {
+const fsmIsCurrentlyInState = function* ( reducerName, desiredState ) {
+
+    let itemState = yield select( ( state ) => { return state[ reducerName ]; } );
+
+    let statesToCheck   = arrify( desiredState );
+    let currentState    = itemState.status;
+
+    for( let state of statesToCheck ) {
+        if( state === currentState ) {
+            return true;
+        }
+    }
+
+    return false;
+};
+
+const multiFsmIsCurrentlyInState = function* ( reducerName, itemName, desiredState ) {
 
     let itemState = yield select( ( state ) => { return state[ reducerName ]; } );
 
@@ -24,5 +40,6 @@ const fsmIsCurrentlyInState = function* ( reducerName, itemName, desiredState ) 
 };
 
 export default {
+	multiFsmIsCurrentlyInState,
 	fsmIsCurrentlyInState
 };

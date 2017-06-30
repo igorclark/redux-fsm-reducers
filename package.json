@@ -1,6 +1,6 @@
 {
   "name": "redux-fsm-reducers",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "builder functions to create FSMs as Redux reducers",
   "main": "index.js",
   "scripts": {
